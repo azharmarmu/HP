@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16dp"
+    tools:context=".activity.ConsultationActivity">
+
+    <TextView
+        android:id="@+id/patientDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:gravity="center"
+        android:padding="@dimen/_8dp"
+        android:text="@string/patient_details"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/patientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:background="@color/colorBG"
+        android:hint="@string/patient_name"
+        android:inputType="textPersonName|textCapWords"
+        android:maxLength="20"
+        android:padding="@dimen/_8dp"
+        android:text=""
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientDetails" />
+
+    <EditText
+        android:id="@+id/patientAge"
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorBG"
+        android:hint="@string/age"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="@dimen/_8dp"
+        android:text=""
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintTop_toBottomOf="@+id/patientName" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:padding="@dimen/_8dp"
+        android:text="@string/gender"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/genderContainer"
+        app:layout_constraintTop_toBottomOf="@+id/patientName" />
+
+    <LinearLayout
+        android:id="@+id/genderContainer"
+        android:layout_width="@dimen/_100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:background="@color/colorBG"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientName">
+
+        <ImageView
+            android:id="@+id/ivMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="genderClick"
+            android:src="@drawable/ic_male_unclick" />
+
+        <ImageView
+            android:id="@+id/ivFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="genderClick"
+            android:src="@drawable/ic_female_unclick" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvConsultingFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:padding="@dimen/_8dp"
+        android:text="@string/consulting_for"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/patientAge" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:background="@color/colorBG"
+        android:padding="@dimen/_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvConsultingFor"
+        app:layout_constraintTop_toBottomOf="@+id/patientAge">
+
+        <Spinner
+            android:id="@+id/spRelation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgConsultationType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:background="@color/colorBG"
+        android:orientation="vertical"
+        android:padding="@dimen/_8dp"
+        app:layout_constraintBottom_toTopOf="@+id/etHealthConcern"
+        app:layout_constraintTop_toBottomOf="@+id/tvConsultingFor">
+
+        <RadioButton
+            android:id="@+id/rbTextConsultation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:checked="true"
+            android:text="@string/text_consultation" />
+
+        <RadioButton
+            android:id="@+id/rbAudioConsultation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8dp"
+            android:text="@string/audio_consultation" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etHealthConcern"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:background="@color/colorBG"
+        android:gravity="top"
+        android:hint="@string/concern_short"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:maxLength="100"
+        android:padding="@dimen/_8dp"
+        android:singleLine="false"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvCreateConsultation"
+        app:layout_constraintTop_toBottomOf="@+id/rgConsultationType" />
+
+    <TextView
+        android:id="@+id/tvCreateConsultation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/box_primary_corner"
+        android:gravity="center"
+        android:onClick="consultNow"
+        android:padding="@dimen/_8dp"
+        android:text="@string/consult_now"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

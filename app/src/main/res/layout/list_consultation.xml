@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sales_man_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8dp">
+
+    <RelativeLayout
+        android:id="@+id/chat_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_8dp">
+
+
+        <TextView
+            android:id="@+id/tvConsultationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_toStartOf="@+id/tvConsultTime"
+            android:text=""
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvConsultLastMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvConsultationName"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_toStartOf="@+id/tvConsultTime"
+            android:text=""
+            android:textSize="@dimen/_12sp" />
+
+        <TextView
+            android:id="@+id/tvConsultTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text=""
+            android:textSize="@dimen/_12sp" />
+
+        <ImageView
+            android:id="@+id/ivConsultType"
+            android:layout_width="@dimen/_16dp"
+            android:layout_height="@dimen/_16dp"
+            android:layout_below="@+id/tvConsultTime"
+            android:layout_marginTop="@dimen/_4dp"
+            android:layout_toEndOf="@+id/tvConsultLastMsg"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_text" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

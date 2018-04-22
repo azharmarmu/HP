@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16dp"
+    tools:context=".activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/loginDescription"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_marginTop="@dimen/_100dp"
+        android:gravity="center"
+        android:text="@string/login_activity_description"
+        android:textSize="@dimen/_12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/loginPhoneNumber"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:maxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginDescription"
+        app:layout_constraintVertical_bias="0.14">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15dp"
+        android:background="@drawable/box_primary_corner"
+        android:onClick="nextClick"
+        android:text="@string/next"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

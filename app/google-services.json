@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "903625488887",
+    "firebase_url": "https://homeopathy-72ec8.firebaseio.com",
+    "project_id": "homeopathy-72ec8",
+    "storage_bucket": "homeopathy-72ec8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903625488887:android:52681c7a92455a03",
+        "android_client_info": {
+          "package_name": "com.homeopathy.azhar.hp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903625488887-t0jej66po2j30gb1btm15jchjvg00eg2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.homeopathy.azhar.hp",
+            "certificate_hash": "ec0ed19bd5f44d14063360a1ca08f85ac7ce2d84"
+          }
+        },
+        {
+          "client_id": "903625488887-109jbnps72h7dvjvrs34tin9fidk7isg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUMVQJmRXSqV_d8cOaY2FcCHkxL6Pj-uo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903625488887-109jbnps72h7dvjvrs34tin9fidk7isg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

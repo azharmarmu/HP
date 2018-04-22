@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">HP</string>
+
+    <!--Tabs-->
+    <string name="home">Home</string>
+    <string name="consultation">Consultation</string>
+    <string name="settings">Settings</string>
+
+    <!-- Index Activity -->
+    <string name="description">Have a safe consultation</string>
+    <string name="get_started">Get started</string>
+    <string name="next">Next</string>
+
+    <!-- Login Activity -->
+    <string name="login_activity_description">
+        HP will send an SMS message to verify
+        your phone number Enter your country
+        code and phone number
+    </string>
+
+    <string name="phone_number">Phone number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="otp_description">We\'ve sent an OTP to your mobile number</string>
+    <string name="dash">______</string>
+    <string name="submit">Submit</string>
+    <string name="create_consultation">Create Consultation</string>
+    <string name="consult_now">CONSULT NOW</string>
+    <string name="concern_short">Enter your concern in short (100 chars)</string>
+    <string name="age">Age</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="patient_details">Patient Details</string>
+    <string name="consulting_for">Consulting For :</string>
+    <string name="text_consultation">Text Consultation</string>
+    <string name="audio_consultation">Audio Consultation</string>
+    <string name="gender">Gender :</string>
+
+    <string name="type_your_message">Type a message</string>
+
+    <string name="dummy_you_msg">Android charting application xml ui.</string>
+    <string name="dummy_me_msg">Android charting application xml ui design.</string>
+
+</resources>
